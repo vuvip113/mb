@@ -3,13 +3,15 @@ import { View, Text, StyleSheet, ScrollView } from 'react-native';
 import CustomInput from '../../components/CustomInput';
 import CustomButton from '../../components/CustomButton/CustomButton';
 import SocialSignInbtn from '../../components/SocialSignInbtn/SocialSignInbtn';
+import { useNavigation } from '@react-navigation/native';
+
 
 const ForgotPasswordScreen = () => {
   const [username, setUsername] = useState('');
-
+  const navigation = useNavigation();
 
   const onSendPressed = () => {
-    console.warn("on Send");
+    navigation.navigate('NewPass');
   }
   
 
@@ -18,7 +20,7 @@ const ForgotPasswordScreen = () => {
   }
 
   const onSignInPress = () => {
-    console.warn("onSignIpPress");
+    navigation.navigate('SignIn');
   }
 
   return (

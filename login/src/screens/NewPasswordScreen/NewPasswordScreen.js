@@ -3,18 +3,21 @@ import { View, Text, StyleSheet, ScrollView } from 'react-native';
 import CustomInput from '../../components/CustomInput';
 import CustomButton from '../../components/CustomButton/CustomButton';
 import SocialSignInbtn from '../../components/SocialSignInbtn/SocialSignInbtn';
+import { useNavigation } from '@react-navigation/native';
 
 const NewPasswordScreen = () => {
   const [code, setCode] = useState('');
   const [newPassword, setNewPassword] = useState('');
 
+  const navigation = useNavigation();
 
   const onSubmitPressed = () => {
-    console.warn("on Submit");
+    navigation.navigate('Home');
+
   }
 
   const onSignInPress = () => {
-    console.warn("onSignIpPress");
+    navigation.navigate('SignIn')
   }
 
   return (
