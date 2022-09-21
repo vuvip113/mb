@@ -16,14 +16,14 @@ const Stack = createNativeStackNavigator();
 const Navigation = () => {
   return (
     <NavigationContainer>
-      <Stack.Navigator screenOptions={{headerShown: false}}>
-      <Stack.Screen name='SignIn' component={SignInScreen} />
-      <Stack.Screen name='SignUp' component={SignUpScreen} />
-      <Stack.Screen name='ConfirEmail' component={EmailScreen} />
-      <Stack.Screen name='ForgotPass' component={ForgotPasswordScreen} />
-      <Stack.Screen name='NewPass' component={NewPasswordScreen } />
-      <Stack.Screen name='Home' component={Home} />
-      
+      <Stack.Navigator screenOptions={{ headerShown: false }}>
+        <Stack.Screen name='SignIn' component={SignInScreen} />
+        <Stack.Screen name='SignUp' component={SignUpScreen} />
+        <Stack.Screen name='ConfirEmail' component={EmailScreen} />
+        <Stack.Screen name='ForgotPass' component={ForgotPasswordScreen} />
+        <Stack.Screen name='NewPass' component={NewPasswordScreen} />
+        <Stack.Screen name='Home' component={Home} />
+
       </Stack.Navigator>
     </NavigationContainer>
   )

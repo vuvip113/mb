@@ -15,7 +15,7 @@ const CustomButton = ({ onPress, text, type = 'Pri', bgCl, fgCl }) => {
         style={[
           styles.text,
           styles[`text_${type}`],
-          fgCl ? {color: fgCl} : {},
+          fgCl ? { color: fgCl } : {},
         ]}>{text}</Text>
     </Pressable>
   )
@@ -43,9 +43,9 @@ const styles = StyleSheet.create({
     fontSize: 20
   },
   text_Ter: {
-    color:'gray',
+    color: 'gray',
   },
-  text_sec:{
+  text_sec: {
     color: '#3b71f3'
   }
 })
